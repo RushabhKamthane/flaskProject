@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <form action="/perform_ser"method="post">
+        <label>Type your text here</label><br>
+        <textarea name="ser_text"></textarea><br>
+        <input type="submit" value="perform SER">
+    </form>
+    {% if result %}
+       <p>{{ result }}</p>
+    {% endif %}
+
+
+</body>
+</html>
